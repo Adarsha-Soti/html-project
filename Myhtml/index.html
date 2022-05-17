@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="wow">
+                <div class="row">
+                    <h3> create Account</h3>
+                    <div class="input-group">
+                      <label class="id" for="fullname">full Name  :</label><br>
+                      <input class="hello" id="fullname" type="text" placeholder="Full Name" required/><br>
+                    </div><br>
+                    <div class="input-group">
+                        <label class="id" for="phone"> Phone No. :</label>
+                      <input class="hello" id="phone" type="tel" placeholder="Phone" maxlength="10" required/><br>
+                    </div><br>
+                    <div class="input-group">
+                        <label class="id" for="email">Email :</label>
+                      <input class="hello" type="email" id="email" placeholder="Email Adress"/><br>
+                    </div><br>
+                    <div class="input-group ">
+                        <label class="id" for="password">Password :</label>
+                      <input class="hello" type="password" id="password" placeholder="Password" minlength="8"/><br>
+                    </div><br>
+                  </div>
+                  <div class="row">
+                      <label for="day"><h3>Date of Birth</h3></label>
+                      <div class="input-group">
+                        <div class="col-third">
+                          <input class="hel" type="number" placeholder="DD" id="day" min="1" max="32"/>
+                          <input class="hel" type="number" placeholder="MM" min="1" max="12"/>
+                          <input class="hel" style="max-width: 100px;" type="number" placeholder="YYYY" min="1999" max="2022"/>
+                        </div>
+                    </div>
+                    <div class="col-half">
+                      <label for="gender-male"><h3>Gender</h3></label>
+                      <div class="input-group">
+                        <input id="gender-male" type="radio" name="gender" value="male"/>
+                        <label class="label">Male</label>
+                        <input type="radio" name="gender" value="female"/>
+                        <label class="label">Female</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="arun">
+                      <h3>Terms and Conditions</h3>
+                    </label>
+                    <div class="input-group">
+                      <input id="arun" type="checkbox"/>
+                      <label for="arun">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <button class="button" id="button" type="submit"><div class="text" >Submit</div></button>
+                  </div>
+            </div>
+        </form>
+      </div>
+</body>
+</html>
